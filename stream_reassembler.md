@@ -48,7 +48,7 @@ This prevents the reassembler from using an unbounded amount of memory, no matte
 - The number of bytes in the reassembled ByteStream (shown in green below)
 - The maximum number of bytes that can be used by “unassembled” substrings (shown in red)
 
-![capacity](.\pic\reassembler_capacity.png)
+![capacity](./pic/reassembler_capacity.png)
 
 ## Solution
 
