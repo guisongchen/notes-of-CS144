@@ -56,7 +56,8 @@ Note: A checkpoint is required because any given seqno corresponds to many absol
 seqnos. 
 E.g. with an ISN of zero, the seqno “17” corresponds to the absolute seqno of
 17, but also 2^32 + 17, or 2^33 + 17, or 2^34 + 17, etc.
-The checkpoint helps resolve the ambiguity: it’s an absolute seqno that the user of this class knows is “in the ballpark” of the correct answer.
+The checkpoint helps resolve the ambiguity: 
+it’s an absolute seqno that the user of this class knows is “in the ballpark” of the correct answer.
 Here, “in the ballpark” can mean any 64-bit number that’s within ±2^31 of the right answer.
 In your TCP implementation, you’ll use the index of the last reassembled byte as the checkpoint.
 */
