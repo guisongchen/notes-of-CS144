@@ -67,14 +67,7 @@ Using std::set is a good choice but why?
 
 ### Work flow
 
-```mermaid
-graph LR
-	t0[check index valid] --> t1[update eof]
-	t1 --> t2[handle overlap]
-	t2 --> t3[update unassemble block]
-	t3 --> t4[written assembled block]
-	t4 --> t5[check eof]
-```
+![process](./pic/reassembler_process.png)
 
 #### Check index valid
 
@@ -91,11 +84,7 @@ Part of the incoming substring has been assembled, so pick the unassembled part 
 
 Most of the work was done in this module.
 
-```mermaid
-graph LR
-	t0[update unassemble size] --> t1[merge backward] --> t2[merge forward]
-	t2 --> t3[insert in unassemble set]
-```
+![merge](./pic/reassembler_merge.png)
 
 - unassembled size will also be update(decreased ) when merge backward and forward
 - use lower_bound (>=) instead of upper_bound (>).
