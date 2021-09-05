@@ -2,7 +2,7 @@
 
 ## IP stack
 
-![stack](./pic/ip_stack.png)
+![stack](./pic/IP_stack.png)
 
 ### Application layer
 
