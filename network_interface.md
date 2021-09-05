@@ -2,7 +2,7 @@
 
 ## IP stack
 
-<img src="./pic/ip_stack.png" alt="stack" style="zoom:70%;" />
+![stack](./pic/ip_stack.png)
 
 ### Application layer
 
